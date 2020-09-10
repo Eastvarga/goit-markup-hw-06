@@ -433,12 +433,27 @@
       <div class="modal">
         <!-- close button -->
         <button class="button-modal" data-modal-close></button>
-        <!-- <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          praesentium inventore voluptatibus hic dolor, reprehenderit veritatis
-          deserunt placeat quia vitae minus dolorem nemo velit ipsum distinctio
-          animi possimus odit?
-        </p> -->
+        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <!-- Name area -->
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name" />
+        <!-- phone area -->
+        <label for="phone">Телефон</label>
+        <input type="tel" name="phone" id="phone" />
+        <!-- e-mail area -->
+        <label for="email">Почта</label>
+        <input type="email" name="email" id="email" />
+        <!-- text area comments -->
+        <label for="comments">Коментарии</label>
+        <textarea name="comments" id="comments" cols="" rows="5"></textarea>
+        <!-- License agrements -->
+        <input type="checkbox" name="license" id="license" />
+        <label for="license"
+          >Соглашаюсь с рассылкой и принимаю
+          <a href="">Условия договора</a></label
+        >
+        <!-- submit button -->
+        <button class="button-submite" data-modal-close>Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
