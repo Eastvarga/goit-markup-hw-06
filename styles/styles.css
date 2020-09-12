@@ -17,9 +17,9 @@ html {
 }
 
 /* убрал аутлайн при фокусе */
-*:focus {
+/* *:focus {
   outline-style: none;
-}
+} */
 
 :root {
   --primary-text-color: #757575;
