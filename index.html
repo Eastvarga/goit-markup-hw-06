@@ -69,7 +69,7 @@
       <section class="section features">
         <div class="container flex">
           <!-- h2 need to hide (заголовок для семантики нужно будет скрыть) -->
-          <!-- <h2 class="hide-head">Our features</h2> -->
+          <h2 class="visually-hidden">Наши особенности</h2>
           <ul class="our-features list">
             <li>
               <div class="icon-holder flex">
@@ -424,37 +424,85 @@
             </li>
           </ul>
         </div>
+        <!-- submit div -->
+
+        <div class="submit-footer">
+          <form class="form-footer">
+            <p class="title">Подпишитесь на рассылку</p>
+            <label class="label-submit flex">
+              <input
+                class="input-submit"
+                type="mail"
+                name="mail"
+                placeholder="E-mail"
+              />
+              <button class="button-submit">Подписаться</button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- modal window -->
     <!-- modal background -->
     <div class="backdrop is-hidden" data-modal>
       <!-- modal form -->
-      <div class="modal">
-        <!-- close button -->
-        <button class="button-modal" data-modal-close></button>
-        <p>Оставьте свои данные, мы вам перезвоним</p>
-        <!-- Name area -->
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" />
-        <!-- phone area -->
-        <label for="phone">Телефон</label>
-        <input type="tel" name="phone" id="phone" />
-        <!-- e-mail area -->
-        <label for="email">Почта</label>
-        <input type="email" name="email" id="email" />
-        <!-- text area comments -->
-        <label for="comments">Коментарии</label>
-        <textarea name="comments" id="comments" rows="8"></textarea>
-        <!-- License agrements -->
-        <input type="checkbox" name="license" id="license" />
-        <label for="license"
-          >Соглашаюсь с рассылкой и принимаю
-          <a href="">Условия договора</a></label
-        >
-        <!-- submit button -->
-        <button class="button-submite" data-modal-close>Отправить</button>
-      </div>
+      <form class="form">
+        <div class="modal">
+          <!-- close button -->
+          <button class="button-modal" data-modal-close>
+            <svg class="icon-button">
+              <use href="./img/icon-sprite.svg#icon-X-button"></use>
+            </svg>
+          </button>
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <!-- Name area -->
+          <label class="input-label">
+            <input type="text" name="name" placeholder=" " />
+            <svg class="icon-input">
+              <use href="./img/icon-sprite.svg#icon-name-input"></use>
+            </svg>
+            <span class="input-title">Имя</span>
+          </label>
+          <!-- phone area -->
+          <label class="input-label">
+            <input type="tel" name="phone" placeholder=" " />
+            <svg class="icon-input">
+              <use href="./img/icon-sprite.svg#icon-phone-input"></use>
+            </svg>
+            <span class="input-title">Телефон</span>
+          </label>
+          <!-- e-mail area -->
+          <label class="input-label">
+            <input type="email" name="email" placeholder=" " />
+            <svg class="icon-input">
+              <use href="./img/icon-sprite.svg#icon-email-input"></use>
+            </svg>
+            <span class="input-title">Почта</span>
+          </label>
+          <!-- text area comments -->
+          <label class="input-label">
+            <textarea
+              class="textarea"
+              name="comments"
+              placeholder="Введите текст"
+            ></textarea>
+            <span class="input-title">Коментарии</span>
+          </label>
+          <!-- License agrements -->
+          <label class="checkbox">
+            <input class="input-hidden" type="checkbox" name="license" />
+            <span class="icon-checkbox"></span>
+            <span class="polic-title">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox-license" href="">Условия договора</a>
+            </span>
+          </label>
+          <!-- submit button -->
+          <button class="modal-submit-button" data-modal-close>
+            Отправить
+          </button>
+        </div>
+      </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>

@@ -56,15 +56,13 @@
     </header>
     <!-- Main -->
     <main class="main-portfolio">
+      <!-- h1 need to hide (заголовок для семантики нужно будет скрыть) -->
+      <h1 class="visually-hidden">Портфолио WebStudio</h1>
       <!-- div filter -->
       <div class="container filter">
-        <!-- h1 need to hide (заголовок для семантики нужно будет скрыть) -->
-        <!-- <h1 class="hide-head">Портфолио WebStudio</h1> -->
         <!-- Button filter section-->
-
-        <!-- h2 need to hide (Заголовок для семантики, нужно будет скрыть)  -->
-        <!-- валидатор ругается из-за отсутствия этого заголовка -->
-        <!-- <h2 class="hide-head">Фильтр</h2> -->
+        <!-- h2 need to hide (заголовок для семантики нужно будет скрыть) -->
+        <h2 class="visually-hidden">Фильтр</h2>
         <ul class="filter-list list flex">
           <li class="item">
             <button class="button" type="button">Все</button>
@@ -87,7 +85,7 @@
       <!-- div projects -->
       <div class="container projects">
         <!-- h2 need to hide (заголовок для семантики нужно будет скрыть)-->
-        <!-- <h2 class="hide-head">Наши проекты</h2> -->
+        <h2 class="visually-hidden">Наши проекты</h2>
         <!-- list of projects -->
         <ul class="projects-list list flex">
           <li>
@@ -341,6 +339,21 @@
               </a>
             </li>
           </ul>
+        </div>
+        <!-- submit div -->
+        <div class="submit-footer">
+          <form class="form-footer">
+            <p class="title">Подпишитесь на рассылку</p>
+            <label class="label-submit flex">
+              <input
+                class="input-submit"
+                type="mail"
+                name="mail"
+                placeholder="E-mail"
+              />
+              <button class="button-submit">Подписаться</button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
