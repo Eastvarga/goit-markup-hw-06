@@ -626,7 +626,7 @@ a {
 }
 /* submit-footer div */
 .submit-footer {
-  display: block;
+  /* display: block; */
   width: calc((100% - 30px) / 2);
   margin-left: 30px;
 }

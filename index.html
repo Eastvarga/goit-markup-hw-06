@@ -426,87 +426,85 @@
         </div>
         <!-- submit div -->
 
-        <div class="submit-footer">
-          <form class="form-footer flex">
-            <p class="title">Подпишитесь на рассылку</p>
-            <label class="label-submit">
-              <input
-                class="input-submit"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="button-submit">Подписаться</button>
-          </form>
-        </div>
+        <!-- <div class="submit-footer"> -->
+        <form class="submit-footer flex">
+          <p class="title">Подпишитесь на рассылку</p>
+          <label class="label-submit">
+            <input
+              class="input-submit"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="button-submit">Подписаться</button>
+        </form>
+        <!-- </div> -->
       </div>
     </footer>
     <!-- modal window -->
     <!-- modal background -->
     <div class="backdrop is-hidden" data-modal>
       <!-- modal form -->
-      <form class="form">
-        <div class="modal">
-          <!-- close button -->
-          <button class="button-modal" data-modal-close>
-            <svg class="icon-button">
-              <use href="./img/icon-sprite.svg#icon-X-button"></use>
-            </svg>
-          </button>
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          <!-- Name area -->
-          <label class="input-label">
-            <input type="text" name="name" placeholder=" " />
-            <svg class="icon-input">
-              <use href="./img/icon-sprite.svg#icon-name-input"></use>
-            </svg>
-            <span class="input-title">Имя</span>
-          </label>
-          <!-- phone area -->
-          <label class="input-label">
-            <input type="tel" name="phone" placeholder=" " />
-            <svg class="icon-input">
-              <use href="./img/icon-sprite.svg#icon-phone-input"></use>
-            </svg>
-            <span class="input-title">Телефон</span>
-          </label>
-          <!-- e-mail area -->
-          <label class="input-label">
-            <input type="email" name="email" placeholder=" " />
-            <svg class="icon-input">
-              <use href="./img/icon-sprite.svg#icon-email-input"></use>
-            </svg>
-            <span class="input-title">Почта</span>
-          </label>
-          <!-- text area comments -->
-          <label class="textarea-label">
-            <textarea
-              class="textarea"
-              name="comments"
-              placeholder="Введите текст"
-            ></textarea>
-            <span class="input-title">Коментарии</span>
-          </label>
-          <!-- License agrements -->
-          <input
-            class="input-hidden visually-hidden"
-            type="checkbox"
-            name="license"
-            id="checkbox"
-          />
-          <!-- <span class="icon-checkbox"></span> -->
-          <!-- <span class="polic-title"> -->
-          <label class="checkbox" for="checkbox"
-            >Соглашаюсь с рассылкой и принимаю
-            <a class="checkbox-license" href="">Условия договора</a>
-            <!-- </span> -->
-          </label>
-          <!-- submit button -->
-          <button class="modal-submit-button" data-modal-close>
-            Отправить
-          </button>
-        </div>
+      <form class="modal">
+        <!-- <div class="modal"> -->
+        <!-- close button -->
+        <button class="button-modal" data-modal-close>
+          <svg class="icon-button">
+            <use href="./img/icon-sprite.svg#icon-X-button"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <!-- Name area -->
+        <label class="input-label">
+          <input type="text" name="name" placeholder=" " />
+          <svg class="icon-input">
+            <use href="./img/icon-sprite.svg#icon-name-input"></use>
+          </svg>
+          <span class="input-title">Имя</span>
+        </label>
+        <!-- phone area -->
+        <label class="input-label">
+          <input type="tel" name="phone" placeholder=" " />
+          <svg class="icon-input">
+            <use href="./img/icon-sprite.svg#icon-phone-input"></use>
+          </svg>
+          <span class="input-title">Телефон</span>
+        </label>
+        <!-- e-mail area -->
+        <label class="input-label">
+          <input type="email" name="email" placeholder=" " />
+          <svg class="icon-input">
+            <use href="./img/icon-sprite.svg#icon-email-input"></use>
+          </svg>
+          <span class="input-title">Почта</span>
+        </label>
+        <!-- text area comments -->
+        <label class="textarea-label">
+          <textarea
+            class="textarea"
+            name="comments"
+            placeholder="Введите текст"
+          ></textarea>
+          <span class="input-title">Коментарии</span>
+        </label>
+        <!-- License agrements -->
+        <input
+          class="input-hidden visually-hidden"
+          type="checkbox"
+          name="license"
+          id="checkbox"
+        />
+        <!-- <span class="icon-checkbox"></span> -->
+        <!-- <span class="polic-title"> -->
+        <label class="checkbox" for="checkbox"
+          >Соглашаюсь с рассылкой и принимаю
+          <a class="checkbox-license" href="">Условия договора</a>
+          <!-- </span> -->
+        </label>
+        <!-- submit button -->
+        <button class="modal-submit-button" data-modal-close>Отправить</button>
+        <!-- </div> -->
       </form>
     </div>
     <script src="./js/modal.js"></script>
