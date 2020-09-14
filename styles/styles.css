@@ -189,7 +189,7 @@ a {
   transition: color var(--time-animation) var(--function-animation);
 }
 /* header, footer links hover, focus цвет при наведении, фокусе  */
-.current,
+.link.current,
 .link:hover,
 .link:focus {
   color: var(--accent-color);
