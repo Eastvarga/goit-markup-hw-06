@@ -170,7 +170,8 @@ a {
   color: var(--title-text-color);
 }
 /* подчеркивание активной страницы */
-.link::after {
+/* .link::after  */
+.current::after {
   position: absolute;
 
   content: "";
@@ -180,8 +181,8 @@ a {
   bottom: -27px;
   background: var(--accent-color);
   border-radius: 2px;
-  opacity: 0;
-  transition: opacity var(--time-animation) var(--function-animation);
+  opacity: 1;
+  /* transition: opacity var(--time-animation) var(--function-animation); */
 }
 /* animation for links */
 .link {
@@ -193,10 +194,10 @@ a {
 .link:focus {
   color: var(--accent-color);
 }
-.current.link::after,
+/* .current.link::after,
 .nav-links .link:hover::after {
   opacity: 1;
-}
+} */
 /* контактная информация */
 .contact {
   margin-left: auto;
@@ -582,7 +583,9 @@ a {
   text-align: left;
   text-transform: uppercase;
 }
-
+.submit-footer .title {
+  width: 100%;
+}
 /* цвет иконок при ховере */
 .follow-link:hover,
 .social-link:hover {
@@ -642,11 +645,13 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 .button-submit {
+  width: 200px;
   margin-left: 12px;
-  padding: 10px 61px 10px 29px;
+  padding: 10px 0px 10px 29px;
   background-image: url("../img/icon-telegram.svg");
   background-repeat: no-repeat;
   background-position: center right 28px;
+  text-align: left;
 }
 /* задаем фильтрбоксу вертикальные отступы 
 с центрированием элементов по горизонтали*/
