@@ -888,7 +888,7 @@ a {
   left: 12px;
   top: 50%;
 
-  fill: var(--title-text-color);
+  /* fill: var(--title-text-color); */
   transition: fill var(--time-animation) var(--function-animation);
 }
 /* focus animation icon input */
