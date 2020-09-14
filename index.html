@@ -480,7 +480,7 @@
             <span class="input-title">Почта</span>
           </label>
           <!-- text area comments -->
-          <label class="input-label">
+          <label class="textarea-label">
             <textarea
               class="textarea"
               name="comments"
@@ -489,13 +489,18 @@
             <span class="input-title">Коментарии</span>
           </label>
           <!-- License agrements -->
-          <label class="checkbox">
-            <input class="input-hidden" type="checkbox" name="license" />
-            <span class="icon-checkbox"></span>
-            <span class="polic-title">
-              Соглашаюсь с рассылкой и принимаю
-              <a class="checkbox-license" href="">Условия договора</a>
-            </span>
+          <input
+            class="input-hidden visually-hidden"
+            type="checkbox"
+            name="license"
+            id="checkbox"
+          />
+          <!-- <span class="icon-checkbox"></span> -->
+          <!-- <span class="polic-title"> -->
+          <label class="checkbox" for="checkbox"
+            >Соглашаюсь с рассылкой и принимаю
+            <a class="checkbox-license" href="">Условия договора</a>
+            <!-- </span> -->
           </label>
           <!-- submit button -->
           <button class="modal-submit-button" data-modal-close>

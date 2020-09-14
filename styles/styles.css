@@ -896,6 +896,14 @@ a {
 .input-label input:focus + .icon-input {
   fill: var(--accent-color);
 }
+.textarea-label {
+  position: relative;
+  display: block;
+  margin: 0 0 10px 0;
+  padding-top: 18px;
+  width: 100%;
+  margin-bottom: 20px;
+}
 /* текст коментариев */
 .textarea {
   width: 100%;
@@ -905,27 +913,42 @@ a {
   border-radius: 4px;
   resize: none;
   /* color: rgba(117, 117, 117, 0.5); */
-  margin: 0 0 20px 0;
+  /* margin: 0 0 20px 0; */
   transition: border-color var(--time-animation) var(--function-animation);
 }
-/* элемент с чекбокчом и лейбелом к ниму */
+/* элемент с чекбокcом и лейбелом к ниму */
 .checkbox {
+  position: relative;
   width: calc(100% - 23px);
   padding: 0;
   margin: 0 11px 30px 12px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* стиль "нечекнутый чекбокс" */
-.icon-checkbox {
+/* .icon-checkbox */
+.checkbox::after {
+  content: "";
+  position: absolute;
   display: block;
+  left: 0;
+  top: 50%;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
-  transform: translateY(25%);
+  /* margin-right: 8px; */
+  transform: translateY(-50%);
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
 }
 /* при чеке на чекбоксе применить стили "чекнутый чекбокс" */
-.checkbox input:checked + .icon-checkbox {
+.input-hidden:checked + .checkbox::after {
   background-image: url("../img/checkbox-checked.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -933,17 +956,13 @@ a {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.checkbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-.polic-title {
+
+/* .polic-title {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
+} */
 .checkbox-license {
   color: var(--accent-color);
   text-decoration: underline;
